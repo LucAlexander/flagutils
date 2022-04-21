@@ -14,7 +14,7 @@ uint64_t bit_on(uint64_t flag, uint8_t bit){
 }
 
 uint8_t bit_check(uint64_t flag, uint8_t bit){
-	return (flag & (1<<(bit-1)))==(1<<(bit-1));
+	return (flag & (1<<bit))!=0;
 }
 
 uint64_t bit_set(uint64_t flag, uint8_t pos, uint8_t bit){
